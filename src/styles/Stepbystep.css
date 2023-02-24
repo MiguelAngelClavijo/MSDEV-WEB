@@ -1,0 +1,68 @@
+.Stepbystep-container{
+    background-color: #1E1E1E;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Stepbystep-container-mark{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.Stepbystep-container-mark>p{
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+
+}
+.Stepbystep-container h2{
+    font-size: 64px;
+    color:#32FFAA ;
+}
+
+.Stepbystep-container-stepcard{
+    width: 100%;
+    height: 339px;
+    box-sizing: border-box;
+    display: flex;
+    padding: 32px 85px
+}
+
+#Stepbystep_container_white{
+    background-color: white;
+    justify-content: flex-end;
+}
+#Stepbystep_container_purple{
+    background-color: #B49FDF;
+}
+
+#stepcard_green{
+    background-color: #32FFAA;
+}
+#stepcard_black{
+    background-color: #1E1E1E;
+
+}
+#stepcard_black h3, #stepcard_black p{
+    color: white;    
+}
+#stepcard_black h3{
+    border-color: white;
+}
+
+@media (max-width: 575.98px){
+    .Stepbystep-container-mark>p{
+        font-size: 14px;
+    }
+    .Stepbystep-container h2{
+        font-size: 34px;
+
+    }
+    .Stepbystep-container-stepcard{
+        align-items: center;
+        justify-content: center;
+    }
+}
