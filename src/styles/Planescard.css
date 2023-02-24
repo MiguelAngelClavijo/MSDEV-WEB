@@ -24,8 +24,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 200px;
 }
 .Planescard-container>ul>li {
     color: white;
 }
-
+.Planescard-container>div{
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}

@@ -9,8 +9,9 @@ const Planescard = (props) => {
                 <li>{props.Planescard_text}</li>
                 <li>{props.Planescard_text}</li>
             </ul>
-            <button>Sube de Nivel</button>
-
+            <div>
+             <button>Sube de Nivel</button>
+            </div>
         </div>
     );
 };
