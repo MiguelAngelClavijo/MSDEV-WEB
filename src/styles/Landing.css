@@ -5,7 +5,25 @@
   width: 100%;
   height: 720px;
   align-items: center;
-  gap: 200px;
+  gap: 350px;
+}
+
+.Landing-Container-Left img {
+  position: relative;
+  z-index: -1;
+  width: 140px;
+  height: 120px;
+  margin: -60px;
+}
+
+.Landing-Container-Left img:nth-child(1) {
+  top: 60px;
+  left: 79px;
+}
+
+.Landing-Container-Left img:nth-child(2) {
+  top: 350px;
+  left: 550px;
 }
 
 .Landing-Container-Left {
@@ -20,14 +38,14 @@
   margin: 0;
 }
 
-.Landing-Container-Left p:nth-child(1) {
+.Landing-Container-Left p:nth-child(3) {
   width: 450px;
   height: auto;
   font-size: 58px;
   font-weight: 700;
 }
 
-.Landing-Container-Left p:nth-child(2) {
+.Landing-Container-Left p:nth-child(4) {
   width: 450px;
   height: auto;
   font-size: 24px;
@@ -62,7 +80,23 @@
 
 .Landing-Container-Right {
   height: 100%;
-  width: 50%;
+  width: 557px;
+}
+
+.Landing-Container-Right img {
+  position: relative;
+  z-index: -1;
+  margin: -60px;
+}
+
+.Landing-Container-Right img:nth-child(1) {
+  top: 660px;
+  left: 279px;
+}
+
+.Landing-Container-Right img:nth-child(2) {
+  top: 150px;
+  left: 260px;
 }
 
 .Black-Card {
@@ -73,6 +107,7 @@
   height: 317px;
   background-color: #141414;
   border-radius: 10px;
+  margin: 0;
 }
 
 .Black-Card::before {
@@ -84,6 +119,31 @@
   border: 5px solid #401b8c;
   top: 146px;
   left: -11px;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.Green-Card {
+  position: relative;
+  bottom: 3px;
+  left: 300px;
+  right: 0;
+  width: 251px;
+  height: 317px;
+  background-color: #32ffaa;
+  border-radius: 10px;
+  margin: 0;
+}
+
+.Green-Card::before {
+  display: block;
+  content: "";
+  position: relative;
+  width: 251px;
+  height: 317px;
+  background-color: #401b8c;
+  top: 10px;
+  left: 10px;
   z-index: -1;
   border-radius: 10px;
 }
