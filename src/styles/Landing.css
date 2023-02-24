@@ -55,6 +55,7 @@
 .Landing-Container-Bottom {
   display: flex;
   flex-direction: column;
+  position: relative;
   width: 540px;
   height: 158px;
   background-color: #141414;
@@ -83,23 +84,25 @@
   width: 557px;
 }
 
-.Landing-Container-Right img {
+.Landing-Container-Right img:nth-child(1) {
+  top: 660px;
+  left: 279px;
   position: relative;
   z-index: -1;
   margin: -60px;
 }
 
-.Landing-Container-Right img:nth-child(1) {
-  top: 660px;
-  left: 279px;
-}
-
 .Landing-Container-Right img:nth-child(2) {
   top: 150px;
   left: 260px;
+  position: relative;
+  z-index: -1;
+  margin: -60px;
 }
 
+/*Estilos Card Balck*/
 .Black-Card {
+  display: flex;
   position: relative;
   top: 63px;
   left: 0;
@@ -123,6 +126,70 @@
   border-radius: 10px;
 }
 
+.Content-Black-Card {
+  position: relative;
+  display: flex;
+  background-color: transparent;
+  width: 251px;
+  height: 317px;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  margin-top: 0px;
+  margin-left: -250px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Black-Card-img {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.Black-Card-img img:nth-child(1) {
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.Black-Card-img img:nth-child(2) {
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.Black-Card-Text {
+  width: 100%;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  box-sizing: border-box;
+  gap: 22px;
+}
+
+#Black-Card-Text-Header {
+  color: #fff;
+  font-family: "Quantico", sans-serif;
+  font-size: 36px;
+  margin: 0;
+  line-height: 95.5%;
+}
+
+#Black-Card-Text-Body {
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-size: 19px;
+  margin: 0;
+  font-weight: 100;
+}
+
+/*Estilos Card Green*/
 .Green-Card {
   position: relative;
   bottom: 3px;
@@ -146,4 +213,239 @@
   left: 10px;
   z-index: -1;
   border-radius: 10px;
+}
+
+.Content-Green-Card {
+  position: relative;
+  display: flex;
+  background-color: transparent;
+  width: 251px;
+  height: 317px;
+  top: 0;
+  z-index: 2;
+  left: 0;
+  margin-top: -315px;
+  margin-left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Green-Card-img {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.Green-Card-img img:nth-child(1) {
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.Green-Card-img img:nth-child(2) {
+  top: 0;
+  left: 0;
+  margin: 0;
+}
+
+.Green-Card-Text {
+  width: 100%;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  box-sizing: border-box;
+  gap: 22px;
+}
+
+#Green-Card-Text-Header {
+  color: #000;
+  font-size: 36px;
+  margin: 0;
+  line-height: 95.5%;
+  font-weight: 700;
+  text-align: end;
+}
+
+#Green-Card-Text-Body {
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 100;
+  text-align: end;
+  line-height: 95.5%;
+}
+
+@media (max-width: 575.98px) {
+  .Landing-Container {
+    flex-direction: column;
+    gap: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .Landing-Container-Left {
+    width: 100%;
+  }
+
+  .Landing-Container-Left p {
+    width: 284px !important;
+  }
+
+  .Landing-Container-Left img:nth-child(2) {
+    display: none;
+  }
+
+  .Landing-Container-Right {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    padding: 0;
+    padding-left: 20px;
+    gap: 20px;
+    overflow-x: scroll;
+    box-sizing: border-box;
+    margin-top: 30px;
+    justify-content: flex-start;
+    flex-shrink: 0;
+  }
+
+  .Landing-Container-Right img:nth-child(1) {
+    position: absolute;
+    width: 54px !important;
+    height: 40px !important;
+  }
+
+  .Landing-Container-Right img:nth-child(2) {
+    position: absolute;
+    width: 54px !important;
+    height: 40px !important;
+  }
+
+  .Landing-Container-Left img {
+    width: 126px;
+    height: 82px;
+  }
+
+  .Landing-Container-Left p:nth-child(3) {
+    font-size: 34px;
+  }
+
+  .Landing-Container-Left p:nth-child(4) {
+    font-size: 18px;
+  }
+
+  .Landing-Container-Left {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .Landing-Container-Left p {
+    text-align: center;
+  }
+
+  .Black-Card {
+    top: 0;
+    left: 0;
+    width: 182px !important;
+    height: 230px;
+  }
+
+  .Black-Card::before {
+    width: 174px !important;
+    height: 85px;
+  }
+
+  .Content-Black-Card {
+    width: 182px;
+    height: 230px;
+    left: 65px;
+  }
+
+  .Black-Card-img img:nth-child(1) {
+    display: none;
+  }
+
+  .Black-Card-img img:nth-child(2) {
+    width: 54px !important;
+    height: 40px !important;
+    left: 90px;
+    top: 15px;
+  }
+
+  .Black-Card-Text {
+    gap: 12px;
+  }
+
+  #Black-Card-Text-Header {
+    font-size: 24px;
+  }
+
+  #Black-Card-Text-Body {
+    font-size: 14px;
+  }
+
+  .Green-Card {
+    top: 0;
+    left: 0;
+    width: 182px;
+    height: 230px;
+  }
+
+  .Green-Card::before {
+    width: 182px;
+    height: 230px;
+  }
+
+  .Content-Green-Card {
+    width: 182px;
+    height: 230px;
+    top: 85px;
+  }
+
+  .Green-Card-img img:nth-child(1) {
+    top: 15px;
+  }
+
+  .Green-Card-img img:nth-child(2) {
+    display: none;
+  }
+
+  .Green-Card-Text {
+    gap: 12px;
+  }
+
+  #Green-Card-Text-Header {
+    font-size: 24px;
+  }
+
+  #Green-Card-Text-Body {
+    font-size: 14px;
+  }
+
+  .Landing-Container-Bottom {
+    width: 100%;
+    height: 200px;
+    border-radius: 0;
+    align-items: center;
+    gap: 30px;
+    top: 700px;
+  }
+
+  .Landing-Container-Bottom p:nth-child(1) {
+    text-align: center;
+    font-size: 16px;
+    width: 100% !important;
+  }
+
+  .Landing-Container-Bottom button {
+    width: 182px;
+    height: 29px;
+    font-size: 12px;
+  }
 }
