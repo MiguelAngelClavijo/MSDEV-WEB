@@ -1,0 +1,31 @@
+.Planescard-container {
+    width: 353px;
+    height: 543px;
+    background: #141414;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Planescard-container>h3 {
+    color: white;
+    font-size: 48px;
+    border-bottom:  3px solid #FFFFFF;
+    width: 277px;
+    text-align: center;
+    padding-bottom: 44px;
+}
+.Planescard-container>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Planescard-container>ul>li {
+    color: white;
+}
+

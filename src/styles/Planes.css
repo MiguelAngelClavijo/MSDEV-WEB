@@ -1,0 +1,41 @@
+.Planes-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Planes-container>div {
+    display: flex;
+    gap: 10px;
+}
+
+.Planes-container>div>p{
+    font-size: 20px;
+}
+
+.Planes-container>h2 {
+    font-size: 64px;
+}
+.Planes-planescard-container {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+#Planescard_id_blue{
+    height: 570px;
+}
+#Planescard_id_blue>h3{
+    color: #00A8FF;
+    border-color: #00A8FF;
+}
+#Planescard_id_green{
+    height: 600px;
+}
+#Planescard_id_green>h3{
+    color: #09E892;
+    border-color: #09E892;
+}
