@@ -1,0 +1,89 @@
+.Landing-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 720px;
+  align-items: center;
+  gap: 200px;
+}
+
+.Landing-Container-Left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 38px;
+  margin: 0;
+}
+
+.Landing-Container-Left p {
+  margin: 0;
+}
+
+.Landing-Container-Left p:nth-child(1) {
+  width: 450px;
+  height: auto;
+  font-size: 58px;
+  font-weight: 700;
+}
+
+.Landing-Container-Left p:nth-child(2) {
+  width: 450px;
+  height: auto;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.Landing-Container-Bottom {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  height: 158px;
+  background-color: #141414;
+  padding: 29px 40px;
+  box-sizing: border-box;
+  gap: 17px;
+  border-radius: 10px;
+}
+
+.Landing-Container-Bottom p:nth-child(1) {
+  color: #fff;
+  width: 461px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.Landing-Container-Bottom button {
+  width: 295px;
+  height: 53px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Landing-Container-Right {
+  height: 100%;
+  width: 50%;
+}
+
+.Black-Card {
+  position: relative;
+  top: 63px;
+  left: 0;
+  width: 251px;
+  height: 317px;
+  background-color: #141414;
+  border-radius: 10px;
+}
+
+.Black-Card::before {
+  display: block;
+  content: "";
+  position: relative;
+  width: 240px;
+  height: 173px;
+  border: 5px solid #401b8c;
+  top: 146px;
+  left: -11px;
+  z-index: -1;
+  border-radius: 10px;
+}
