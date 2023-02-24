@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/Navbar.css";
 import lang from "../assets/icons/lang.svg";
 import downarrow from "../assets/icons/downarrow.svg";
-
+import burgerMenu from "../assets/icons/BurgerMenu.svg";
 const Navbar = () => {
   return (
     <div className="Navbar-Container">
@@ -20,7 +20,8 @@ const Navbar = () => {
         <p>ES</p>
         <img src={downarrow} alt="downarrow" />
         <button id="Navbar-Button">Sube de nivel</button>
-      </div>
+        <img id = "Navbar-burgerMenu"src={burgerMenu}/>
+        </div>
     </div>
   );
 };

@@ -60,3 +60,32 @@
   background-color: black;
   margin: 0;
 }
+#Navbar-burgerMenu{
+  display: none;
+}
+
+@media (max-width: 575.98px){
+  .Navbar-Container{
+    padding: 40px;
+  }
+    .Navbar-links{
+      display: none !important;
+    }
+    
+      
+  
+    .Navbar-Container-Right::after {
+      right: 45px;
+      height: 35px;
+    }
+    .Navbar-Container-Right p{
+      font-size: 14px;
+      
+    }
+    #Navbar-Button{
+      display: none;
+    }
+    #Navbar-burgerMenu{
+      display: block;
+    }
+}
