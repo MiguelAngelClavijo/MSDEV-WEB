@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="Footer-Container">
       <div className="Footer-Logo">
         <p id="Footer-Logo-Name">MS DEV</p>
-        <p>® 2023 MS Dev</p>
+        <p id="Footer-Logo-Register">® 2023 MS Dev</p>
       </div>
       <div className="Footer-Form">
         <div className="Footer-Form-Head">
