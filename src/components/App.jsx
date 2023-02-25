@@ -6,6 +6,7 @@ import { Landing } from "../containers/Landing";
 const App = () => {
   return (
     <div>
+      <Navbar/>
       <Landing />
     </div>
   );

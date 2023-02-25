@@ -1,451 +1,230 @@
-.Landing-Container {
+.Landing-Container{
   display: flex;
-  flex-direction: row;
+  box-sizing: border-box;
   justify-content: center;
-  width: 100%;
-  height: 720px;
-  align-items: center;
-  gap: 350px;
+  gap: 20px;
+  height: 100vh;
 }
-
-.Landing-Container-Left img {
-  position: relative;
-  z-index: -1;
-  width: 140px;
-  height: 120px;
-  margin: -60px;
-}
-
-.Landing-Container-Left img:nth-child(1) {
-  top: 60px;
-  left: 79px;
-}
-
-.Landing-Container-Left img:nth-child(2) {
-  top: 350px;
-  left: 550px;
-}
-
-.Landing-Container-Left {
+/*----------------------------------------------------------------------------*/
+.Landing-Container-Left{
   display: flex;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 38px;
-  margin: 0;
+  box-sizing: border-box;
+  width:600px ;
 }
-
-.Landing-Container-Left p {
-  margin: 0;
-}
-
-.Landing-Container-Left p:nth-child(3) {
-  width: 450px;
-  height: auto;
+.Landing-Container-Left h2{
+  font-weight: bold;
   font-size: 58px;
-  font-weight: 700;
+  
 }
-
-.Landing-Container-Left p:nth-child(4) {
-  width: 450px;
-  height: auto;
-  font-size: 24px;
-  font-weight: 400;
+.Landing-Container-Left p{
+  font-size:24px ;
 }
+/*----------------------------------------------------------------------------*/
 
-.Landing-Container-Bottom {
-  display: flex;
-  flex-direction: column;
-  position: relative;
+.Landing-Container-Bottom{
+  box-sizing: border-box;
+  background: #141414;
   width: 540px;
   height: 158px;
-  background-color: #141414;
-  padding: 29px 40px;
-  box-sizing: border-box;
-  gap: 17px;
   border-radius: 10px;
+  padding-left: 25px;
+  
 }
-
-.Landing-Container-Bottom p:nth-child(1) {
-  color: #fff;
-  width: 461px;
-  font-size: 22px;
-  font-weight: 700;
+.Landing-Container-Bottom p{
+  color: white;
+  font-weight: bold;
+  font-size:24px ;
 }
-
-.Landing-Container-Bottom button {
+.Landing-Container-Bottom button{
   width: 295px;
   height: 53px;
   font-size: 20px;
-  font-weight: 700;
 }
 
-.Landing-Container-Right {
-  height: 100%;
-  width: 557px;
-}
 
-.Landing-Container-Right img:nth-child(1) {
-  top: 660px;
-  left: 279px;
-  position: relative;
-  z-index: -1;
-  margin: -60px;
-}
-
-.Landing-Container-Right img:nth-child(2) {
-  top: 150px;
-  left: 260px;
-  position: relative;
-  z-index: -1;
-  margin: -60px;
-}
-
-/*Estilos Card Balck*/
-.Black-Card {
+/*----------------------------------------------------------------------------*/
+.Landing-Container-Right{
   display: flex;
-  position: relative;
-  top: 63px;
-  left: 0;
-  width: 251px;
-  height: 317px;
-  background-color: #141414;
-  border-radius: 10px;
-  margin: 0;
-}
-
-.Black-Card::before {
-  display: block;
-  content: "";
-  position: relative;
-  width: 240px;
-  height: 173px;
-  border: 5px solid #401b8c;
-  top: 146px;
-  left: -11px;
-  z-index: -1;
-  border-radius: 10px;
-}
-
-.Content-Black-Card {
-  position: relative;
-  display: flex;
-  background-color: transparent;
-  width: 251px;
-  height: 317px;
-  top: 0;
-  z-index: 2;
-  left: 0;
-  margin-top: 0px;
-  margin-left: -250px;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 600px;
+  padding-top: 80px;
 }
-
-.Black-Card-img {
-  width: 100%;
-  height: 90px;
+.Landing-card{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 251px;
+  height: 317px;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+}
+.Landing-card>div {
   display: flex;
   justify-content: space-between;
-  padding: 0 20px;
-  box-sizing: border-box;
 }
 
-.Black-Card-img img:nth-child(1) {
-  top: 0;
-  left: 0;
-  margin: 0;
-}
-
-.Black-Card-img img:nth-child(2) {
-  top: 0;
-  left: 0;
-  margin: 0;
-}
-
-.Black-Card-Text {
-  width: 100%;
-  height: 210px;
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
-  box-sizing: border-box;
-  gap: 22px;
-}
-
-#Black-Card-Text-Header {
-  color: #fff;
-  font-family: "Quantico", sans-serif;
+.Landing-card h3{
   font-size: 36px;
   margin: 0;
-  line-height: 95.5%;
 }
-
-#Black-Card-Text-Body {
-  color: #fff;
-  font-family: "Raleway", sans-serif;
-  font-size: 19px;
-  margin: 0;
-  font-weight: 100;
-}
-
-/*Estilos Card Green*/
-.Green-Card {
-  position: relative;
-  bottom: 3px;
-  left: 300px;
-  right: 0;
-  width: 251px;
-  height: 317px;
-  background-color: #32ffaa;
-  border-radius: 10px;
-  margin: 0;
-}
-
-.Green-Card::before {
-  display: block;
-  content: "";
-  position: relative;
-  width: 251px;
-  height: 317px;
-  background-color: #401b8c;
-  top: 10px;
-  left: 10px;
-  z-index: -1;
-  border-radius: 10px;
-}
-
-.Content-Green-Card {
-  position: relative;
-  display: flex;
-  background-color: transparent;
-  width: 251px;
-  height: 317px;
-  top: 0;
-  z-index: 2;
-  left: 0;
-  margin-top: -315px;
-  margin-left: 0;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.Green-Card-img {
-  width: 100%;
-  height: 90px;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.Green-Card-img img:nth-child(1) {
-  top: 0;
-  left: 0;
-  margin: 0;
-}
-
-.Green-Card-img img:nth-child(2) {
-  top: 0;
-  left: 0;
-  margin: 0;
-}
-
-.Green-Card-Text {
-  width: 100%;
-  height: 210px;
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
-  box-sizing: border-box;
-  gap: 22px;
-}
-
-#Green-Card-Text-Header {
-  color: #000;
-  font-size: 36px;
-  margin: 0;
-  line-height: 95.5%;
-  font-weight: 700;
-  text-align: end;
-}
-
-#Green-Card-Text-Body {
-  color: #000;
-  font-family: "Raleway", sans-serif;
+.Landing-card p{
   font-size: 20px;
-  margin: 0;
-  font-weight: 100;
-  text-align: end;
-  line-height: 95.5%;
+  margin: 20px 0px 0px 0px;
 }
+.Landing-card::before{
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+}
+/*Black Card*/
+.Black-Card{
+  background-color: #141414;
+}
+.Black-Card h3{
+  color: white;
+  font-family: 'Quantico';
+  font-weight: 400;
+}
+.Black-Card p {
+  color: white;
+}
+
+.Black-Card::before{
+  border: 5px solid #401B8C;
+  width: 251px;
+  height: 173px;
+  top: 145px;
+  right: 3px;
+  
+}
+/*Green Card*/
+
+.Green-Card{
+  background-color: #32FFAA;
+  align-self: flex-end;
+}
+.Green-Card h3{
+  text-align: right;
+}
+.Green-Card p {
+  text-align: right;
+}
+.Green-Card::before{
+  width: 251px;
+  height: 317px;
+  background: #401B8C;
+  left: 10px;
+  top: 10px;
+}
+
+/*----------------------------------------------------------------------------*/
 
 @media (max-width: 575.98px) {
-  .Landing-Container {
+  .Landing-Container{
     flex-direction: column;
-    gap: 0;
-    width: 100%;
+    overflow: hidden;
     height: auto;
   }
-
-  .Landing-Container-Left {
+  /*----------------------------------------------------------------------------*/
+  .Landing-Container-Left{
     width: 100%;
+    
   }
-
-  .Landing-Container-Left p {
-    width: 284px !important;
-  }
-
-  .Landing-Container-Left img:nth-child(2) {
-    display: none;
-  }
-
-  .Landing-Container-Right {
-    display: flex;
-    width: 100%;
-    height: 350px;
-    padding: 0;
-    padding-left: 20px;
-    gap: 20px;
-    overflow-x: scroll;
-    box-sizing: border-box;
-    margin-top: 30px;
-    justify-content: flex-start;
-    flex-shrink: 0;
-  }
-
-  .Landing-Container-Right img:nth-child(1) {
-    position: absolute;
-    width: 54px !important;
-    height: 40px !important;
-  }
-
-  .Landing-Container-Right img:nth-child(2) {
-    position: absolute;
-    width: 54px !important;
-    height: 40px !important;
-  }
-
-  .Landing-Container-Left img {
-    width: 126px;
-    height: 82px;
-  }
-
-  .Landing-Container-Left p:nth-child(3) {
+  .Landing-Container-Left h2{
+    text-align: center;
     font-size: 34px;
+    padding: 0px 50px;
   }
-
-  .Landing-Container-Left p:nth-child(4) {
+  .Landing-Container-Left p{
+    text-align: center;
     font-size: 18px;
+    padding: 0px 50px;
   }
+  /*----------------------------------------------------------------------------*/
 
-  .Landing-Container-Left {
-    justify-content: center;
+  .Landing-Container-Bottom{
+    display: flex;
+    flex-direction: column;
     align-items: center;
-  }
-
-  .Landing-Container-Left p {
-    text-align: center;
-  }
-
-  .Black-Card {
-    top: 0;
-    left: 0;
-    width: 182px !important;
-    height: 230px;
-  }
-
-  .Black-Card::before {
-    width: 174px !important;
-    height: 85px;
-  }
-
-  .Content-Black-Card {
-    width: 182px;
-    height: 230px;
-    left: 65px;
-  }
-
-  .Black-Card-img img:nth-child(1) {
-    display: none;
-  }
-
-  .Black-Card-img img:nth-child(2) {
-    width: 54px !important;
-    height: 40px !important;
-    left: 90px;
-    top: 15px;
-  }
-
-  .Black-Card-Text {
-    gap: 12px;
-  }
-
-  #Black-Card-Text-Header {
-    font-size: 24px;
-  }
-
-  #Black-Card-Text-Body {
-    font-size: 14px;
-  }
-
-  .Green-Card {
-    top: 0;
-    left: 0;
-    width: 182px;
-    height: 230px;
-  }
-
-  .Green-Card::before {
-    width: 182px;
-    height: 230px;
-  }
-
-  .Content-Green-Card {
-    width: 182px;
-    height: 230px;
-    top: 85px;
-  }
-
-  .Green-Card-img img:nth-child(1) {
-    top: 15px;
-  }
-
-  .Green-Card-img img:nth-child(2) {
-    display: none;
-  }
-
-  .Green-Card-Text {
-    gap: 12px;
-  }
-
-  #Green-Card-Text-Header {
-    font-size: 24px;
-  }
-
-  #Green-Card-Text-Body {
-    font-size: 14px;
-  }
-
-  .Landing-Container-Bottom {
+    position: absolute;
+    border-radius: 0px;
     width: 100%;
-    height: 200px;
-    border-radius: 0;
-    align-items: center;
-    gap: 30px;
-    top: 700px;
+    height: 130px;
+    padding-left: 0px;
+    gap: 10px;
+    top: 630px
   }
-
-  .Landing-Container-Bottom p:nth-child(1) {
-    text-align: center;
-    font-size: 16px;
-    width: 100% !important;
+  .Landing-Container-Bottom p{
+    font-size:16px ;
   }
-
-  .Landing-Container-Bottom button {
+  .Landing-Container-Bottom button{
     width: 182px;
     height: 29px;
     font-size: 12px;
+    border-radius: 6px;
+  }
+
+  /*----------------------------------------------------------------------------*/
+  .Landing-Container-Right{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: auto;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    height: 250px;
+    padding: 0px 60px;
+    margin: 20px 0px;
+    gap: 50px;
+    
+  }
+  .Landing-card{
+    
+    width: 182px;
+    height: 230px;
+    padding: 15px;
+    flex-shrink: 0;
+  }
+  .Landing-card>div {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+  }
+
+  .Landing-card h3{
+    font-size: 24px;
+  }
+  .Landing-card p{
+    font-size: 14px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  /*Black Card*/
+
+  
+  .Black-Card::before{
+    width: 182px;
+    height: 125px;
+    top: 105px;
+    right: 2px;
+    
+  }
+  /*Green Card*/
+  
+  .Green-Card{
+    background-color: #32FFAA;
+    align-self: normal;
+  }
+
+  .Green-Card::before{
+    width: 182px;
+    height: 230px;
+    left: 10px;
+    top: 10px;
   }
 }

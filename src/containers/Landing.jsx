@@ -13,9 +13,7 @@ const Landing = () => {
   return (
     <div className="Landing-Container">
       <div className="Landing-Container-Left">
-        <img src={keysicon} />
-        <img src={reacticon} />
-        <p>Tu sitio web es un reflejo de ti y de tu marca</p>
+        <h2>Tu sitio web es un reflejo de ti y de tu marca</h2>
         <p>
           Permítenos ayudarte a causar una buena impresión con un diseño único
           de tu pagina web con las últimas tendencias
@@ -26,37 +24,30 @@ const Landing = () => {
         </div>
       </div>
       <div className="Landing-Container-Right">
-        <img src={jsicon} />
-        <img src={cssicon} />
-        <div className="Black-Card">
-          <div className="Content-Black-Card">
-            <div className="Black-Card-img">
-              <img src={backarrow} />
-              <img src={numvector} />
-            </div>
-            <div className="Black-Card-Text">
-              <p id="Black-Card-Text-Header">Diseño Flexible</p>
-              <p id="Black-Card-Text-Body">
-                Adaptable y responsive, para cualquier dispositivo o pantalla
-                adaptandonos a ti
-              </p>
-            </div>
+
+        <div className="Black-Card Landing-card">
+          <div>
+            <img src={backarrow} />
+            <img src={numvector} />
           </div>
+          <h3 id="Black-Card-Text-Header">Diseño Flexible</h3>
+          <p id="Black-Card-Text-Body">
+            Adaptable y responsive, para cualquier dispositivo o pantalla
+            adaptandonos a ti
+          </p>
         </div>
-        <div className="Green-Card">
-          <div className="Content-Green-Card">
-            <div className="Green-Card-img">
-              <img src={numvector2} />
-              <img src={backarrow2} />
-            </div>
-            <div className="Green-Card-Text">
-              <p id="Green-Card-Text-Header">“El usuario es primero”</p>
-              <p id="Green-Card-Text-Body">
-                Elementos visuales cautivadores e interactivos para una
-                experiencia de usuario memorable
-              </p>
-            </div>
+
+        <div className="Green-Card Landing-card">
+          <div>
+            <img src={numvector2} />
+            <img src={backarrow2} />
           </div>
+
+          <h3 id="Green-Card-Text-Header">“El usuario es primero”</h3>
+          <p id="Green-Card-Text-Body">
+            Elementos visuales cautivadores e interactivos para una
+            experiencia de usuario memorable
+          </p>
         </div>
       </div>
     </div>
