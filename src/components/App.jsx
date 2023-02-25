@@ -1,11 +1,11 @@
 import React from "react";
 import "../styles/global.scss";
-import { Navbar } from "./navbar";
+import { Footer } from "../containers/Footer";
 
 const App = () => {
   return (
     <div>
-      <Navbar />
+      <Footer />
     </div>
   );
 };
