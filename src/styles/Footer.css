@@ -1,12 +1,17 @@
 .Footer-Container {
   display: flex;
-  position: absolute;
   width: 100%;
-  gap: 170px;
+  height: 231px;
+  gap: 100px;
   align-items: center;
   justify-content: center;
-  bottom: 0;
   margin-bottom: 50px;
+  background-color: #141414;
+  margin: 0;
+}
+
+.Footer-Container p {
+  color: #fff;
 }
 
 .Footer-Logo {
@@ -14,11 +19,34 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border-right: 1px solid #fff;
+  height: 150px;
+  padding-right: 100px;
+}
+
+#Footer-Logo-Name {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+
+#email {
+  width: 286px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+#Footer-Logo-Register {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .Footer-Form {
   display: flex;
   flex-direction: column;
+  gap: 60px;
+  align-items: center;
 }
 
 .Footer-Form-Head {
@@ -41,4 +69,68 @@
 
 .Footer-Icons p {
   margin: 0;
+}
+
+#Footer-Btn {
+  width: 122px;
+  height: 22px;
+  font-size: 12px;
+  border-radius: 2px;
+}
+
+.Footer-Form-Bottom p {
+  font-size: 12px;
+}
+
+@media (max-width: 575.98px) {
+  .Footer-Container {
+    position: relative;
+    width: 100%;
+    height: 375px;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: flex-start;
+  }
+
+  .Footer-Logo {
+    border-right: 0;
+    border-bottom: 1px solid #fff;
+    width: 277px;
+    height: 90px;
+    padding-right: 0;
+    padding-bottom: 0;
+    gap: 6px;
+    margin-top: 20px;
+  }
+
+  .Footer-Logo p {
+    margin: 0;
+  }
+
+  #Footer-Logo-Register {
+    margin: 0px;
+  }
+
+  .Footer-Form {
+    width: 320px;
+    gap: 40px;
+  }
+
+  #email {
+    width: 203px;
+  }
+
+  .Footer-Icons {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  #Footer-Btn {
+    width: 86px;
+    height: 17px;
+  }
+
+  .Footer-Form-Bottom {
+    position: absolute;
+    bottom: 20px;
+  }
 }

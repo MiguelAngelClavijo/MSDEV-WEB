@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <div className="Footer-Container">
       <div className="Footer-Logo">
-        <p>MS DEV</p>
+        <p id="Footer-Logo-Name">MS DEV</p>
         <p>® 2023 MS Dev</p>
       </div>
       <div className="Footer-Form">
@@ -20,7 +20,7 @@ const Footer = () => {
             name="email"
             placeholder="¿Prefieres por correo? Escribenos"
           />
-          <button>Enviar</button>
+          <button id="Footer-Btn">Enviar</button>
         </div>
         <div className="Footer-Form-Bottom">
           <p>Politica de privacidad</p>
