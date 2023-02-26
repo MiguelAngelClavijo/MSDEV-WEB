@@ -11,9 +11,11 @@ const Calltoaction = () => {
         Obten una consulta gratuita con MS DEV y aprende cómo puede mejorar tu
         negocio con un diseño ilimitado.
       </p>
-      <button className="Calltoaction-Button-Cta">
-        Eres libre de escoger, Comienza ya →
-      </button>
+      <a href="https://wa.me/message/HD7XBGYD5I5GE1" target="_blank">
+        <button className="Calltoaction-Button-Cta">
+          Eres libre de escoger, Comienza ya →
+        </button>
+      </a>
     </div>
   );
 };

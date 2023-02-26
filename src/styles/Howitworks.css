@@ -1,71 +1,68 @@
 .Howitworks-container {
-    background-color: #1e1e1e;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
 }
-.Howitworks-container>div {
-    display: flex;
-    margin-top: 60px;
+.Howitworks-container > div {
+  display: flex;
+  margin-top: 90px;
 }
 .Howitworks-container p {
-    color: white;
-    font-size: 24px;
-    text-align: center;
+  color: white;
+  font-size: 24px;
+  text-align: center;
 }
-.Howitworks-container>div>p{
-    font-size: 20px;
-    margin-left: 10px;
-}
-
-.Howitworks-container h2{
-    font-size: 64px;
-    color: #32FFAA;
-    width: 730px;
-    text-align: center;
-    margin: 42px 0px;
+.Howitworks-container > div > p {
+  font-size: 20px;
+  margin-left: 10px;
+  font-weight: 700;
 }
 
-.Howitworks-benefits-container{
-    width: 100%;
-    justify-content: space-evenly;
-    margin-top: 90px;
+.Howitworks-container h2 {
+  font-size: 64px;
+  color: #32ffaa;
+  width: 730px;
+  text-align: center;
+  margin: 42px 0px;
 }
 
+.Howitworks-benefits-container {
+  width: 100%;
+  justify-content: space-evenly;
+  margin-top: 90px;
+}
 
-
-#Howitworks-paragraph{
-    width: 570px;
+#Howitworks-paragraph {
+  width: 570px;
 }
 #benefit_blue {
-    background-color: #72CEFE;
+  background-color: #72cefe;
 }
 #benefit_purple {
-    background-color: #B49FDF;
+  background-color: #b49fdf;
 }
 #benefit_green {
-    background-color: #99F5D2;
+  background-color: #99f5d2;
 }
 
-@media (max-width: 575.98px){
-    .Howitworks-container h2{
-        width: 100%;
-        font-size: 34px;
-    }
-    .Howitworks-container>div>p{
-        font-size: 14px;
-
-    }
-    .Howitworks-benefits-container{
-        flex-direction: column;
-    }
-    #Howitworks-paragraph{
-        width: 100%;
-        text-align: center;
-        font-size: 18px;
-        box-sizing: border-box;
-        padding: 0px 47px;
-    }
-
+@media (max-width: 575.98px) {
+  .Howitworks-container h2 {
+    width: 100%;
+    font-size: 34px;
+  }
+  .Howitworks-container > div > p {
+    font-size: 14px;
+  }
+  .Howitworks-benefits-container {
+    flex-direction: column;
+  }
+  #Howitworks-paragraph {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    box-sizing: border-box;
+    padding: 0px 47px;
+  }
 }
