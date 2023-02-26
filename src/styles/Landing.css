@@ -1,0 +1,319 @@
+.Landing-Container {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  gap: 150px;
+  height: 720px;
+}
+
+/*----------------------------------------------------------------------------*/
+.Landing-Container-Left {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 600px;
+  position: relative;
+  gap: 40px;
+}
+.Landing-Container-Left h2 {
+  font-weight: bold;
+  font-size: 58px;
+  margin: 0;
+}
+.Landing-Container-Left p {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+/*----------------------------------------------------------------------------*/
+.Landing-Container-Left > img:nth-child(1) {
+  top: 120px;
+  left: 79px;
+}
+
+.Landing-Container-Left > img:nth-child(2) {
+  top: 450px;
+  left: 600px;
+}
+
+.Landing-Container-Left > img {
+  position: absolute;
+  z-index: -1;
+  width: 140px;
+  height: 120px;
+  margin: -60px;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.Landing-Container-Bottom {
+  box-sizing: border-box;
+  background: #141414;
+  width: 540px;
+  height: 158px;
+  border-radius: 10px;
+  padding-left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.Landing-Container-Bottom p {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+}
+.Landing-Container-Bottom button {
+  width: 295px;
+  height: 53px;
+  font-size: 20px;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.Landing-Container-Right > img:nth-child(1) {
+  top: 750px;
+  left: 310px;
+  position: absolute;
+  z-index: -1;
+  margin: -60px;
+}
+
+.Landing-Container-Right > img:nth-child(2) {
+  top: 150px;
+  left: 260px;
+  position: absolute;
+  z-index: -1;
+  margin: -60px;
+}
+
+/*----------------------------------------------------------------------------*/
+.Landing-Container-Right {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  padding-top: 80px;
+  position: relative;
+}
+.Landing-card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 251px;
+  height: 317px;
+  border-radius: 10px;
+  padding: 15px;
+  position: relative;
+  justify-content: center;
+  gap: 25px;
+}
+
+.Landing-card > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Landing-card h3 {
+  font-size: 36px;
+  margin: 0;
+}
+.Landing-card p {
+  font-size: 20px;
+  margin: 20px 0px 0px 0px;
+}
+.Landing-card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-radius: 10px;
+}
+/*Black Card*/
+.Black-Card {
+  background-color: #141414;
+}
+.Black-Card h3 {
+  color: white;
+  font-family: "Quantico";
+  font-weight: 400;
+  line-height: 95.49%;
+  letter-spacing: -0.03em;
+}
+
+.Black-Card p {
+  color: white;
+  margin: 0;
+}
+
+.Black-Card::before {
+  border: 5px solid #401b8c;
+  width: 251px;
+  height: 173px;
+  top: 145px;
+  right: 3px;
+}
+/*Green Card*/
+
+.Green-Card {
+  background-color: #32ffaa;
+  align-self: flex-end;
+}
+.Green-Card h3 {
+  text-align: right;
+  line-height: 95.49%;
+  letter-spacing: -0.03em;
+}
+.Green-Card p {
+  text-align: right;
+  margin: 0;
+}
+.Green-Card::before {
+  width: 251px;
+  height: 317px;
+  background: #401b8c;
+  left: 10px;
+  top: 10px;
+}
+
+/*----------------------------------------------------------------------------*/
+
+@media (max-width: 575.98px) {
+  .Landing-Container {
+    flex-direction: column;
+    overflow: hidden;
+    height: auto;
+    gap: 10px;
+    height: 844px;
+    justify-content: flex-start;
+  }
+  /*----------------------------------------------------------------------------*/
+  .Landing-Container-Left > img:nth-child(1) {
+    top: 0px;
+    left: 130px;
+  }
+
+  .Landing-Container-Left > img:nth-child(2) {
+    top: 450px;
+    left: 600px;
+  }
+
+  .Landing-Container-Left > img {
+    width: 60px;
+  }
+  /*----------------------------------------------------------------------------*/
+  .Landing-Container-Left {
+    width: 100%;
+  }
+  .Landing-Container-Left h2 {
+    text-align: center;
+    font-size: 34px;
+    padding: 0px 50px;
+  }
+  .Landing-Container-Left p {
+    text-align: center;
+    font-size: 18px;
+    padding: 0px 50px;
+  }
+  /*----------------------------------------------------------------------------*/
+
+  .Landing-Container-Bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    border-radius: 0px;
+    width: 100%;
+    height: 200px;
+    padding-left: 0px;
+    gap: 30px;
+    top: 630px;
+  }
+
+  .Landing-Container-Bottom p {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .Landing-Container-Bottom button {
+    width: 220px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+
+  /*----------------------------------------------------------------------------*/
+  .Landing-Container-Right {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: auto;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    height: 250px;
+    padding: 0px 60px;
+    margin: 20px 0px;
+    gap: 50px;
+  }
+
+  /*----------------------------------------------------------------------------*/
+
+  .Landing-Container-Right > img:nth-child(1) {
+    top: 260px;
+    left: 310px;
+  }
+
+  .Landing-Container-Right > img:nth-child(2) {
+    top: 100px;
+    left: 65px;
+  }
+
+  .Landing-Container-Right > img {
+    width: 60px;
+  }
+
+  /*----------------------------------------------------------------------------*/
+
+  .Landing-card {
+    width: 182px;
+    height: 230px;
+    padding: 15px;
+    flex-shrink: 0;
+    gap: 7px;
+  }
+  .Landing-card > div {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+  }
+
+  .Landing-card h3 {
+    font-size: 24px;
+  }
+  .Landing-card p {
+    font-size: 14px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  /*Black Card*/
+
+  .Black-Card::before {
+    width: 182px;
+    height: 125px;
+    top: 105px;
+    right: 2px;
+  }
+  /*Green Card*/
+
+  .Green-Card {
+    background-color: #32ffaa;
+    align-self: normal;
+  }
+
+  .Green-Card::before {
+    width: 182px;
+    height: 230px;
+    left: 10px;
+    top: 10px;
+  }
+}
