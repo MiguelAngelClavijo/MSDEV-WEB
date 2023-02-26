@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Calltoaction.css";
-import imgcta from "../assets/img/imgcta.png";
 
 const Calltoaction = () => {
   const link = () => {
@@ -8,6 +7,7 @@ const Calltoaction = () => {
       "https://wa.me/573178225494?text=Estoy listo para subir de nivel con uno de sus planes !!"
     );
   };
+
   return (
     <div className="Calltoaction-Container">
       <div className="Calltoaction-BlackCover"></div>
