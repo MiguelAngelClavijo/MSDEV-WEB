@@ -1,8 +1,16 @@
 import React from "react";
 import "../styles/Calltoaction.css";
-import imgcta from "../assets/img/imgcta.png";
+
+
+
 
 const Calltoaction = () => {
+
+  const handleClick = () => {
+    window.open('https://wa.me/message/HD7XBGYD5I5GE1')
+  }
+
+
   return (
     <div className="Calltoaction-Container">
       <div className="Calltoaction-BlackCover"></div>
@@ -11,11 +19,9 @@ const Calltoaction = () => {
         Obten una consulta gratuita con MS DEV y aprende cómo puede mejorar tu
         negocio con un diseño ilimitado.
       </p>
-      <a href="https://wa.me/message/HD7XBGYD5I5GE1" target="_blank">
-        <button className="Calltoaction-Button-Cta">
-          Eres libre de escoger, Comienza ya →
-        </button>
-      </a>
+      <button className="Calltoaction-Button-Cta" onClick={handleClick}>
+        Eres libre de escoger, Comienza ya →
+      </button>
     </div>
   );
 };
