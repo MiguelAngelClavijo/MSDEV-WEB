@@ -1,6 +1,7 @@
 import React from "react";
-import { Howitworks } from "../containers/Howitworks";
 import "../styles/global.scss";
+import { Howitworks } from "../containers/Howitworks";
+import { Stepbystep } from "../containers/Stepbystep";
 import { Navbar } from "./Navbar";
 import { Landing } from "../containers/Landing";
 
@@ -10,6 +11,7 @@ const App = () => {
       <Navbar />
       <Landing />
       <Howitworks />
+      <Stepbystep />
     </div>
   );
 };
