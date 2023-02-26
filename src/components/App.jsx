@@ -1,4 +1,5 @@
 import React from "react";
+import { Planes } from "../containers/Planes";
 import "../styles/global.scss";
 import { Howitworks } from "../containers/Howitworks";
 import { Stepbystep } from "../containers/Stepbystep";
@@ -12,6 +13,7 @@ const App = () => {
       <Landing />
       <Howitworks />
       <Stepbystep />
+      <Planes />
     </div>
   );
 };
