@@ -6,6 +6,7 @@ import { Stepbystep } from "../containers/Stepbystep";
 import { Navbar } from "./Navbar";
 import { Landing } from "../containers/Landing";
 import { Calltoaction } from "../containers/Calltoaction";
+import { Footer } from "../containers/Footer";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Stepbystep />
       <Planes />
       <Calltoaction />
+      <Footer />
     </div>
   );
 };
