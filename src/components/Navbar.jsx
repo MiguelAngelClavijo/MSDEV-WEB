@@ -3,6 +3,7 @@ import "../styles/Navbar.css";
 import lang from "../assets/icons/lang.svg";
 import downarrow from "../assets/icons/downarrow.svg";
 import burgerMenu from "../assets/icons/BurgerMenu.svg";
+
 const Navbar = () => {
   return (
     <div className="Navbar-Container">
@@ -10,8 +11,8 @@ const Navbar = () => {
         <h1 className="Navbar-logo">MS DEV</h1>
         <ul className="Navbar-links">
           <li>Beneficios</li>
-          <li>Planes</li>
-          <li>Precios</li>
+          <li>Trabaja con nosotros</li>
+          <li>Nuestros Planes</li>
           <li>Contacto</li>
         </ul>
       </div>
@@ -20,8 +21,8 @@ const Navbar = () => {
         <p>ES</p>
         <img src={downarrow} alt="downarrow" />
         <button id="Navbar-Button">Sube de nivel</button>
-        <img id = "Navbar-burgerMenu"src={burgerMenu}/>
-        </div>
+        <img id="Navbar-burgerMenu" src={burgerMenu} />
+      </div>
     </div>
   );
 };

@@ -2,6 +2,7 @@ import React from "react";
 import dolarSign from "../assets/icons/dolarSign.svg";
 import { Planescard } from "../components/Planescard";
 import "../styles/Planes.css";
+
 const Planes = () => {
   return (
     <div className="Planes-container">
@@ -15,16 +16,19 @@ const Planes = () => {
           Planescard_title="titulo"
           Planescard_text="texto"
           Planescard_id="Planescard_id_white"
+          Planescard_message="Basico !!"
         />
         <Planescard
           Planescard_title="titulo"
           Planescard_text="texto"
           Planescard_id="Planescard_id_blue"
+          Planescard_message="Deluxe !!"
         />
         <Planescard
           Planescard_title="titulo"
           Planescard_text="texto"
           Planescard_id="Planescard_id_green"
+          Planescard_message="Master !!"
         />
       </div>
     </div>

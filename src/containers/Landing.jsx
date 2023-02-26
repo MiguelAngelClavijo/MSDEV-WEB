@@ -10,6 +10,11 @@ import backarrow2 from "../assets/icons/backarrow2.svg";
 import numvector2 from "../assets/icons/numvector2.svg";
 
 const Landing = () => {
+  const link = () => {
+    window.open(
+      "https://wa.me/573178225494?text=Estoy listo para subir de nivel con uno de sus planes !!"
+    );
+  };
   return (
     <div className="Landing-Container">
       <div className="Landing-Container-Left">
@@ -22,7 +27,7 @@ const Landing = () => {
         </p>
         <div className="Landing-Container-Bottom">
           <p>¿Estas listo para llegar a un siguiente nivel?</p>
-          <button>Habla con nosotros ahora →</button>
+          <button onClick={link}>Habla con nosotros ahora →</button>
         </div>
       </div>
       <div className="Landing-Container-Right">

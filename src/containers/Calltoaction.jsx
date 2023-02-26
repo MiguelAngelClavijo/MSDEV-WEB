@@ -3,6 +3,11 @@ import "../styles/Calltoaction.css";
 import imgcta from "../assets/img/imgcta.png";
 
 const Calltoaction = () => {
+  const link = () => {
+    window.open(
+      "https://wa.me/573178225494?text=Estoy listo para subir de nivel con uno de sus planes !!"
+    );
+  };
   return (
     <div className="Calltoaction-Container">
       <div className="Calltoaction-BlackCover"></div>
@@ -11,11 +16,9 @@ const Calltoaction = () => {
         Obten una consulta gratuita con MS DEV y aprende cómo puede mejorar tu
         negocio con un diseño ilimitado.
       </p>
-      <a href="https://wa.me/message/HD7XBGYD5I5GE1" target="_blank">
-        <button className="Calltoaction-Button-Cta">
-          Eres libre de escoger, Comienza ya →
-        </button>
-      </a>
+      <button onClick={link} className="Calltoaction-Button-Cta">
+        Eres libre de escoger, Comienza ya →
+      </button>
     </div>
   );
 };
