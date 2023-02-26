@@ -13,6 +13,8 @@ const Landing = () => {
   return (
     <div className="Landing-Container">
       <div className="Landing-Container-Left">
+        <img src={keysicon}></img>
+        <img src={reacticon}></img>
         <h2>Tu sitio web es un reflejo de ti y de tu marca</h2>
         <p>
           Permítenos ayudarte a causar una buena impresión con un diseño único
@@ -24,7 +26,8 @@ const Landing = () => {
         </div>
       </div>
       <div className="Landing-Container-Right">
-
+        <img src={jsicon}></img>
+        <img src={cssicon}></img>
         <div className="Black-Card Landing-card">
           <div>
             <img src={backarrow} />
@@ -45,8 +48,8 @@ const Landing = () => {
 
           <h3 id="Green-Card-Text-Header">“El usuario es primero”</h3>
           <p id="Green-Card-Text-Body">
-            Elementos visuales cautivadores e interactivos para una
-            experiencia de usuario memorable
+            Elementos visuales cautivadores e interactivos para una experiencia
+            de usuario memorable
           </p>
         </div>
       </div>
