@@ -5,6 +5,7 @@ import { Howitworks } from "../containers/Howitworks";
 import { Stepbystep } from "../containers/Stepbystep";
 import { Navbar } from "./Navbar";
 import { Landing } from "../containers/Landing";
+import { Calltoaction } from "../containers/Calltoaction";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Howitworks />
       <Stepbystep />
       <Planes />
+      <Calltoaction />
     </div>
   );
 };
