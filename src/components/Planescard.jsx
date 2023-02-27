@@ -8,14 +8,15 @@ const Planescard = (props) => {
       props.Planescard_message;
     window.open(message);
   };
+
+  var Benefits = props.Planescard_text.map(function (i) {
+    return <li>✓ {i}</li>;
+  });
+
   return (
     <div className="Planescard-container" id={props.Planescard_id}>
       <h3>{props.Planescard_title}</h3>
-      <ul>
-        <li>{props.Planescard_text}</li>
-        <li>{props.Planescard_text}</li>
-        <li>{props.Planescard_text}</li>
-      </ul>
+      <ul>{Benefits}</ul>
       <div>
         <button onClick={link}>Sube de Nivel</button>
       </div>

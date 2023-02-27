@@ -39,6 +39,7 @@
   justify-content: space-evenly;
   width: 100%;
   z-index: 1;
+  margin-top: 50px;
 }
 #Planescard_id_blue {
   height: 570px;

@@ -5,7 +5,7 @@ import "../styles/Stepbystep.css";
 
 const Stepbystep = () => {
   return (
-    <div className="Stepbystep-container">
+    <div className="Stepbystep-container" id="Stepbystep">
       <div className="Stepbystep-container-mark">
         <img src={stepbystepIcon} />
         <p>Paso a paso</p>
