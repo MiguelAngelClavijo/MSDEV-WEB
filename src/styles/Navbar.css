@@ -73,11 +73,14 @@
 @media (max-width: 575.98px) {
   .Navbar-Container {
     padding: 40px;
+    justify-content: center;
   }
   .Navbar-links {
     display: none !important;
   }
-
+  .Navbar-Container-Right{
+    display: none;
+  }
   .Navbar-Container-Right::after {
     right: 45px;
     height: 35px;

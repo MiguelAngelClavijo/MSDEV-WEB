@@ -1,5 +1,5 @@
 .Stepbystep-container {
-  background-color: #1e1e1e;
+  background-color: #141414;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
   background-color: #32ffaa;
 }
 #stepcard_black {
-  background-color: #1e1e1e;
+  background-color: #141414;
 }
 #stepcard_black h3,
 #stepcard_black p {
@@ -53,6 +53,9 @@
 }
 
 @media (max-width: 575.98px) {
+  .Stepbystep-container{
+    padding-top: 10px;
+  }
   .Stepbystep-container-mark > p {
     font-size: 14px;
   }
@@ -61,6 +64,10 @@
   }
   .Stepbystep-container-stepcard {
     align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  #Stepbystep_container_white {
     justify-content: center;
   }
 }

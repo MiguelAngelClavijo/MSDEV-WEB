@@ -9,8 +9,8 @@ const Planescard = (props) => {
     window.open(message);
   };
 
-  var Benefits = props.Planescard_text.map(function (i) {
-    return <li>✓ {i}</li>;
+  var Benefits = props.Planescard_text.map(function (i, index) {
+    return <li key = {index}>✓ {i}</li>;
   });
 
   return (

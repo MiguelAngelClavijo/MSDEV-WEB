@@ -185,8 +185,10 @@
     overflow: hidden;
     height: auto;
     gap: 10px;
-    height: 844px;
+    height: 830px;
     justify-content: flex-start;
+    margin-bottom: 0;
+
   }
   /*----------------------------------------------------------------------------*/
   .Landing-Container-Left > img:nth-child(1) {
@@ -316,5 +318,11 @@
     height: 230px;
     left: 10px;
     top: 10px;
+  }
+}
+
+@media (max-width:1400px) {
+  .Landing-Container {
+    gap: 20px;
   }
 }

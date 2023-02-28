@@ -34,7 +34,7 @@
 @media (max-width: 575.98px) {
   .Stepcard-container {
     width: 185px;
-    height: 185px;
+    height: 250px;
     flex-direction: column;
   }
   .Stepcard-container h3 {
@@ -44,6 +44,9 @@
     border-bottom: 2px solid #000000;
   }
   .Stepcard-container p {
+    margin-top: 0px;
     font-size: 14px;
+    padding: 0px;
+    width: 100%;
   }
 }
