@@ -64,8 +64,11 @@
 .Planescard-price-container>p{
     color: white;
     align-self: flex-start;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
 }
-.Planescard-price-container>span{
+.Planescard-price-container>div>span{
     font-size: 48px;
     color: white;
 }

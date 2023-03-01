@@ -9,13 +9,13 @@ const Planescard = (props) => {
   const rounded = useTransform(count, Math.round);
 
   useEffect(() => {
-    if (props.Planescard_number != props.Planescard_target){
-    const animation = animate(count, props.Planescard_target, { duration: 3});
+    
+    const animation = animate(count, props.Planescard_target, { duration: 1});
     console.log(props.Planescard_target)
     return animation.stop;
 
-    }
-  }, []);
+    
+  }, [props.Planescard_target]);
   const link = () => {
     var message = "https://wa.me/573178225494?text="+props.Planescard_message
     window.open(message);
@@ -31,8 +31,11 @@ const Planescard = (props) => {
       <p>{props.Planescard_p}</p>
       <ul>{Benefits}</ul>
       <section className="Planescard-price-container">
-        <p> Donde:</p>
+        <p> Desde:</p>
+        <div>
+        <span>$</span>
         <motion.span>{rounded}</motion.span>
+        </div>
       </section>
       <div>
         <button onClick={link}>{props.Planescard_button}</button>
