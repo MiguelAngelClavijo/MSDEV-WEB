@@ -42,14 +42,17 @@
 
 .Navbar-Container-Right img:nth-child(1) {
   margin-right: 10px;
+  display: none;
 }
 
 .Navbar-Container-Right p {
   margin-right: 6px;
+  display: none;
 }
 
 .Navbar-Container-Right img:nth-child(3) {
   margin-right: 20px;
+  display: none;
 }
 
 .Navbar-Container-Right::after {
@@ -61,6 +64,7 @@
   height: 57px;
   background-color: black;
   margin: 0;
+  display: none;
 }
 #Navbar-burgerMenu {
   display: none;
@@ -78,7 +82,7 @@
   .Navbar-links {
     display: none !important;
   }
-  .Navbar-Container-Right{
+  .Navbar-Container-Right {
     display: none;
   }
   .Navbar-Container-Right::after {
