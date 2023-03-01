@@ -35,6 +35,7 @@ const deluxeTextWithout = "¡Vamos por más! Con el plan Deluxe, obtendrás una 
 const masterTextWith = "¡Es hora de despegar! Con el plan Máster, tendrás todo lo que necesitas para llevar tu proyecto al siguiente nivel, incluyendo el diseño de tu empresa, funcionalidades y una presencia online personalizada. ¡Estamos listos!%0A¡Agendemos una cita lo antes posible!"
 const masterTextWithout = "¡Felicidades! Has elegido el mejor plan para hacer realidad tus objetivos. Con nuestra solución personalizada, crearemos a la medida la imagen de tu empresa así estarás en camino a alcanzar el éxito que mereces.%0A¡Agendemos una cita lo antes posible"
 const Planes = () => {
+  const [number1, setNumber1] = useState(30)
   const [masterText, setMasterText] = useState("master")
   const [deluxeText, setDeluxeText] = useState("deluxe")
   const [basicText, setbasicText] = useState("basic")
@@ -47,6 +48,7 @@ const Planes = () => {
     isActive ? setbasicText(basictextWith) : setbasicText(basictextWithout)
     isActive ? setDeluxeText(deluxeTextWith) : setDeluxeText(deluxeTextWithout)
     isActive ? setMasterText(masterTextWith) : setMasterText(masterTextWithout)
+    isActive ? setNumber1(10): setNumber1(30)
   })
 
   return (
@@ -83,6 +85,8 @@ const Planes = () => {
           Planescard_id="Planescard_id_white"
           Planescard_message = {basicText}
           Planescard_button = "¡Comienza ahora!"
+          Planescard_number = {30}
+          Planescard_target = {number1}
         />
         <Planescard
           Planescard_title="Deluxe"

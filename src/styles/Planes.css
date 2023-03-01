@@ -42,14 +42,14 @@
   margin-top: 50px;
 }
 #Planescard_id_blue {
-  height: 570px;
+  height: 690px;
 }
 #Planescard_id_blue > h3 {
   color: #00a8ff;
   border-color: #00a8ff;
 }
 #Planescard_id_green {
-  height: 600px;
+  height: 720px;
 }
 #Planescard_id_green > h3 {
   color: #09e892;
@@ -107,6 +107,9 @@
 .Planes-handle[data-ison = "true"]{
   background-color: #09e892;
 }
+
+
+
 @media (max-width: 575.98px) {
   .Planes-container {
     padding-bottom: 40px;
