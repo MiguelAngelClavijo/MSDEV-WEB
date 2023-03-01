@@ -10,7 +10,7 @@ import { Footer } from "../containers/Footer";
 
 const App = () => {
   return (
-    <div>
+    <div className="MainContainer">
       <Navbar />
       <Landing />
       <Howitworks />

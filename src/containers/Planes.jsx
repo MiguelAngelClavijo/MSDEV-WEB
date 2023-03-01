@@ -82,6 +82,7 @@ const Planes = () => {
           Planescard_text={Planescard_Basic}
           Planescard_id="Planescard_id_white"
           Planescard_message = {basicText}
+          Planescard_button = "¡Comienza ahora!"
         />
         <Planescard
           Planescard_title="Deluxe"
@@ -89,6 +90,7 @@ const Planes = () => {
           Planescard_text={Planescard_Deluxe}
           Planescard_id="Planescard_id_blue"
           Planescard_message = {deluxeText}
+          Planescard_button = "¡Sube de nivel!"
         />
         <Planescard
           Planescard_title="Máster"
@@ -96,6 +98,7 @@ const Planes = () => {
           Planescard_text={Planescard_Master}
           Planescard_id="Planescard_id_green"
           Planescard_message = {masterText}
+          Planescard_button = "¡Impulsa tu carrera!"
         />
       </div>
       <p>*Todos nuestros planes cuentan con vista adaptada a todos los dispositivos. </p>

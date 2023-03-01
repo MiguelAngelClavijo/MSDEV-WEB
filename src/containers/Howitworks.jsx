@@ -37,7 +37,7 @@ const Howitworks = () => {
         <Benefitcard
           imgUrl={lowPrice}
           headingText="Precios para ti"
-          text="Podrás ver como quedará tu sitio web en tan solo días"
+          text="Contamos con planes diseñados para tus necesidades"
           idcolor="benefit_green"
         />
       </div>

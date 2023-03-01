@@ -21,7 +21,7 @@ const Planescard = (props) => {
       <p>{props.Planescard_p}</p>
       <ul>{Benefits}</ul>
       <div>
-        <button onClick={link}>Sube de Nivel</button>
+        <button onClick={link}>{props.Planescard_button}</button>
       </div>
     </div>
   );

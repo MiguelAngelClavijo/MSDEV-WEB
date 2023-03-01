@@ -22,3 +22,7 @@ button{
     background-color: #32FFAA;
     cursor: pointer;
 }
+
+.MainContainer::-webkit-scrollbar {
+    display: none;
+}

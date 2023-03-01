@@ -20,7 +20,7 @@ const Landing = () => {
       <div className="Landing-Container-Left">
         <img src={keysicon}></img>
         <img src={reacticon}></img>
-        <h2>Tu sitio web es un reflejo de ti y de tu marca</h2>
+        <h2>¡Tu sitio web es un reflejo de ti y de tu marca!</h2>
         <p>
           Permítenos ayudarte a causar una buena impresión con un diseño único
           de tu pagina web con las últimas tendencias

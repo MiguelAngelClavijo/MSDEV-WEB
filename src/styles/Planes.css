@@ -129,6 +129,9 @@
     justify-content: flex-start;
     overflow-x: scroll;
   }
+  .Planes-planescard-container::-webkit-scrollbar{
+    display: none;
+  }
   #Planescard_id_green{
     height: 660px;
   }
