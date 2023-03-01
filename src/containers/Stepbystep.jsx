@@ -26,7 +26,7 @@ const Stepbystep = () => {
         id="Stepbystep_container_white"
       >
         <Stepcard
-          cardTitle="2. Diseño Ideal"
+          cardTitle="2. Obtén tu diseño Ideal"
           cardText="Nuestro equipo de expertos trabajará en estrecha colaboración contigo para crear un diseño que cumpla con tus expectativas y objetivos."
           StepcardId="stepcard_black"
         />
@@ -36,7 +36,7 @@ const Stepbystep = () => {
         id="Stepbystep_container_purple"
       >
         <Stepcard
-          cardTitle="3. Vive tu marca"
+          cardTitle="3. Vive tus resultados"
           cardText="Una vez que estés satisfecho con el diseño, implementaremos tu proyecto y comenzarás a ver los resultados que deseas."
           StepcardId="stepcard_green"
         />

@@ -36,6 +36,7 @@
     width: 185px;
     height: 250px;
     flex-direction: column;
+    padding-top: 10px;
   }
   .Stepcard-container h3 {
     font-size: 16px;

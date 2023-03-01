@@ -55,8 +55,62 @@
   color: #09e892;
   border-color: #09e892;
 }
+.Planes-container > p {
+  color: #c7c7c7;
+  text-align: center;
+  margin: 0;
+}
 
+
+
+/*----------------------------------------------------------------------------------------------*/
+.Planes-sliderContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.Planes-sliderContainer>p{
+  font-size: 20px;
+  font-weight: bold;
+}
+.Planes-Switch-Container{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.Planes-Switch-Container>span{
+  font-size: 20px;
+  font-weight: bold;
+}
+.Planes-switch{
+  width: 80px;
+  height: 35px;
+  background-color: #141414;
+  border-radius: 40px;
+  padding: 5px;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Planes-switch[data-ison = "true"]{
+  justify-content: flex-end;
+}
+.Planes-handle{
+  width: 27px;
+  height: 27px;
+  border-radius: 27px;
+  background-color: white;
+}
+.Planes-handle[data-ison = "true"]{
+  background-color: #09e892;
+}
 @media (max-width: 575.98px) {
+  .Planes-container {
+    padding-bottom: 40px;
+  }
   .Planes-container > div > p {
     font-size: 14px;
   }
@@ -74,5 +128,14 @@
     padding: 0px 50px;
     justify-content: flex-start;
     overflow-x: scroll;
+  }
+  #Planescard_id_green{
+    height: 660px;
+  }
+  #Planescard_id_blue {
+    height: 660px;
+  }
+  .Planes-container > p {
+    padding: 20px;
   }
 }
