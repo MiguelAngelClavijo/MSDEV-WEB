@@ -23,11 +23,17 @@ const Footer = () => {
           <button id="Footer-Btn">Enviar</button>
         </div>
         <div className="Footer-Form-Bottom">
-          <a href="https://celestial-cannon-390.notion.site/T-rminos-y-Condiciones-b947dda8d2be4b0eaf9fd67ad3a7050b" target="_blank">
-          <p>Terminos y condiciones </p>
-          </a >
-          <a href="https://celestial-cannon-390.notion.site/Pol-tica-de-Privacidad-c40ff4cb38784c64bd62b804ef15217f" target="_blank">
-          <p>Politica de privacidad</p>
+          <a
+            href="https://celestial-cannon-390.notion.site/T-rminos-y-Condiciones-b947dda8d2be4b0eaf9fd67ad3a7050b"
+            target="_blank"
+          >
+            <p>Terminos y condiciones </p>
+          </a>
+          <a
+            href="https://celestial-cannon-390.notion.site/Pol-tica-de-Privacidad-c40ff4cb38784c64bd62b804ef15217f"
+            target="_blank"
+          >
+            <p>Politica de privacidad</p>
           </a>
         </div>
       </div>
@@ -35,7 +41,7 @@ const Footer = () => {
         <p>
           <img src={facebook}></img>
         </p>
-        <p>
+        {/* <p>
           <img src={linkedin}></img>
         </p>
         <p>
@@ -43,7 +49,7 @@ const Footer = () => {
         </p>
         <p>
           <img src={behance}></img>
-        </p>
+        </p> */}
       </div>
     </div>
   );
