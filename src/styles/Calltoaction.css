@@ -21,14 +21,14 @@
 }
 
 .Calltoaction-Button-Cta {
-  width: 750px;
-  height: 80px;
+  width: 700px;
+  height: 100px;
   background-color: transparent;
   border: 3px solid #32ffaa;
   margin-top: 31px;
   color: #fff;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 400;
   z-index: 2;
   border-radius: 0;
   cursor: pointer;
@@ -58,6 +58,12 @@
   width: 889px;
 }
 
+#Calltoaction-Button-Cta-Free {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
+}
+
 @media (max-width: 575.98px) {
   .Calltoaction-Container {
     background-position: center;
@@ -76,6 +82,10 @@
   .Calltoaction-Button-Cta {
     width: 330px;
     height: 63px;
+    font-size: 16px;
+  }
+
+  #Calltoaction-Button-Cta-Free {
     font-size: 16px;
   }
 }
