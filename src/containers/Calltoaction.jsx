@@ -18,7 +18,8 @@ const Calltoaction = () => {
         Muestra tu trabajo profesionalmente en línea y destaca de la multitud
       </p>
       <button onClick={link} className="Calltoaction-Button-Cta">
-        Eres libre de escoger, Agenda ya tu cita →
+        Eres libre de escoger, Agenda{" "}
+        <span id="Calltoaction-Button-Cta-Free">Gratis</span> tu cita ahora →
       </button>
     </div>
   );
