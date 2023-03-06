@@ -56,34 +56,32 @@
   border-color: #09e892;
 }
 .Planes-container > p {
-  color: #c7c7c7;
+  color: #000;
   text-align: center;
   margin: 0;
 }
 
-
-
 /*----------------------------------------------------------------------------------------------*/
-.Planes-sliderContainer{
+.Planes-sliderContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
 }
-.Planes-sliderContainer>p{
+.Planes-sliderContainer > p {
   font-size: 20px;
   font-weight: bold;
 }
-.Planes-Switch-Container{
+.Planes-Switch-Container {
   display: flex;
   align-items: center;
   gap: 18px;
 }
-.Planes-Switch-Container>span{
+.Planes-Switch-Container > span {
   font-size: 20px;
   font-weight: bold;
 }
-.Planes-switch{
+.Planes-switch {
   width: 80px;
   height: 35px;
   background-color: #141414;
@@ -95,20 +93,18 @@
   align-items: center;
   justify-content: flex-start;
 }
-.Planes-switch[data-ison = "true"]{
+.Planes-switch[data-ison="true"] {
   justify-content: flex-end;
 }
-.Planes-handle{
+.Planes-handle {
   width: 27px;
   height: 27px;
   border-radius: 27px;
   background-color: white;
 }
-.Planes-handle[data-ison = "true"]{
+.Planes-handle[data-ison="true"] {
   background-color: #09e892;
 }
-
-
 
 @media (max-width: 575.98px) {
   .Planes-container {
@@ -132,10 +128,10 @@
     justify-content: flex-start;
     overflow-x: scroll;
   }
-  .Planes-planescard-container::-webkit-scrollbar{
+  .Planes-planescard-container::-webkit-scrollbar {
     display: none;
   }
-  #Planescard_id_green{
+  #Planescard_id_green {
     height: 700px;
   }
   #Planescard_id_blue {
