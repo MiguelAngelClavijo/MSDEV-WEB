@@ -83,6 +83,18 @@
   font-size: 12px;
 }
 
+.Footer-Form-Head > p > span {
+  color: #32ffaa;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.Footer-Form-Head > p {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
 @media (max-width: 575.98px) {
   .Footer-Container {
     position: relative;
@@ -122,7 +134,7 @@
   }
 
   .Footer-Icons {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 
   #Footer-Btn {

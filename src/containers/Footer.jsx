@@ -14,13 +14,16 @@ const Footer = () => {
       </div>
       <div className="Footer-Form">
         <div className="Footer-Form-Head">
-          <input
+          {/* <input
             type="text"
             id="email"
             name="email"
             placeholder="¿Prefieres por correo? Escribenos"
           />
-          <button id="Footer-Btn">Enviar</button>
+          <button id="Footer-Btn">Enviar</button> */}
+          <p>
+            <span>Email: </span>msdeveloperscol@gmail.com
+          </p>
         </div>
         <div className="Footer-Form-Bottom">
           <a
@@ -38,9 +41,12 @@ const Footer = () => {
         </div>
       </div>
       <div className="Footer-Icons">
-        <p>
+        <a
+          href="https://www.facebook.com/profile.php?id=100090774669945"
+          target="_blank"
+        >
           <img src={facebook}></img>
-        </p>
+        </a>
         {/* <p>
           <img src={linkedin}></img>
         </p>

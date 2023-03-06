@@ -12,7 +12,7 @@ import numvector2 from "../assets/icons/numvector2.svg";
 const Landing = () => {
   const link = () => {
     window.open(
-      "https://wa.me/573178225494?text=Estoy listo para subir de nivel con uno de sus planes !!"
+      "https://wa.me/573178225494?text=Hola! Quiero impulsar mi carrera al siguiente nivel y me gustaría saber cómo puedo hacerlo. ¿Podemos programar una reunión para discutir cómo podemos trabajar juntos?"
     );
   };
   return (
@@ -35,7 +35,7 @@ const Landing = () => {
         <img src={cssicon}></img>
         <div className="Black-Card Landing-card">
           <div>
-            <img src={backarrow} />
+            {/* <img src={backarrow} /> */}
             <img src={numvector} />
           </div>
           <h3 id="Black-Card-Text-Header">Diseño Flexible</h3>
@@ -48,7 +48,7 @@ const Landing = () => {
         <div className="Green-Card Landing-card">
           <div>
             <img src={numvector2} />
-            <img src={backarrow2} />
+            {/* <img src={backarrow2} /> */}
           </div>
 
           <h3 id="Green-Card-Text-Header">“El usuario es primero”</h3>

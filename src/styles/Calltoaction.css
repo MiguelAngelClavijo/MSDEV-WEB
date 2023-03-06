@@ -27,7 +27,7 @@
   border: 3px solid #32ffaa;
   margin-top: 31px;
   color: #fff;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
   z-index: 2;
   border-radius: 0;
@@ -76,6 +76,6 @@
   .Calltoaction-Button-Cta {
     width: 330px;
     height: 63px;
-    font-size: 16px;
+    font-size: 14px;
   }
 }
