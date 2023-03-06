@@ -1,63 +1,124 @@
 .Planescard-container {
-    width: 353px;
-    height: 543px;
-    background: #141414;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 20px;
-
+  width: 353px;
+  height: 660px;
+  background: #141414;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 20px;
 }
 
-.Planescard-container>h3 {
-    color: white;
-    font-size: 48px;
-    border-bottom:  3px solid #FFFFFF;
-    width: 277px;
-    text-align: center;
-    padding-bottom: 30px;
-    margin-bottom: 24px;
+.Planescard-container > h3 {
+  color: white;
+  font-size: 48px;
+  border-bottom: 3px solid #ffffff;
+  width: 277px;
+  text-align: center;
+  padding-bottom: 30px;
+  margin-bottom: 24px;
 }
-.Planescard-container>p{
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    font-size: 16px;
+.Planescard-container > p {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
 }
-.Planescard-container>ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 200px;
-    
+.Planescard-container > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
 }
-.Planescard-container>ul>li {
-    color: white;
-    font-size: 14px;
-    text-align: left;
-    line-height: 32px;
-    padding: 0px 20px;
-    width: 100%;
-    box-sizing: border-box;
+.Planescard-container > ul > li {
+  color: white;
+  font-size: 14px;
+  text-align: left;
+  line-height: 32px;
+  padding: 0px 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
-.Planescard-container>div{
-    height: 200px;
-    display: flex;
-    align-items: flex-end;
-    margin-bottom: 40px;
+.Planescard-container > div {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  box-sizing: border-box;
+}
+
+.Planescard-price-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 20px;
+  padding-top: 20px;
+}
+.Planescard-price-container > p {
+  color: white;
+  align-self: flex-start;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+}
+.Planescard-price-container > div > span {
+  font-size: 48px;
+  color: white;
+}
+
+.Planescard-price-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.Planescard-price-container-text {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.Planescard-price-container-text > span {
+  font-size: 48px;
+  color: white;
+}
+
+#Planescard-price-container-text-cop {
+  font-size: 20px;
+  align-self: flex-end;
+  margin-left: 20px;
 }
 
 @media (max-width: 575.98px) {
+  .Planescard-container {
+    height: 700px;
+  }
+  .Planescard-container > p {
+    font-size: 14px;
+  }
 
-    .Planescard-container{
-        height: 660px;
-    }
-    .Planescard-container>p {
-        font-size: 14px;
-    }
+  .Planescard-price-container-text > span {
+    font-size: 32px;
+  }
+
+  .Planescard-price-container > p {
+    font-size: 16px;
+  }
+
+  .Planescard-price-container > div > button {
+    height: 50px;
+    font-size: 16px;
+    width: 170px;
+  }
 }

@@ -37,7 +37,11 @@ const masterTextWith =
   "¡Es hora de despegar! Quiero el plan Máster para tener todo lo que necesito desde 0 para impulsar mi proyecto al siguiente nivel. %0A ¡Agendemos una cita lo antes posible!";
 const masterTextWithout =
   "¡Hola! Estoy interesado en el mejor plan para hacer realidad mis objetivos. Necesito una solución personalizada, creando a la medida la imagen de mi empresa. %0A ¡Agendemos una cita lo antes posible";
+
 const Planes = () => {
+  const [number1, setNumber1] = useState(30);
+  const [number2, setNumber2] = useState(60);
+  const [number3, setNumber3] = useState(90);
   const [masterText, setMasterText] = useState("master");
   const [deluxeText, setDeluxeText] = useState("deluxe");
   const [basicText, setbasicText] = useState("basic");
@@ -50,6 +54,9 @@ const Planes = () => {
     isActive ? setbasicText(basictextWith) : setbasicText(basictextWithout);
     isActive ? setDeluxeText(deluxeTextWith) : setDeluxeText(deluxeTextWithout);
     isActive ? setMasterText(masterTextWith) : setMasterText(masterTextWithout);
+    isActive ? setNumber1(100) : setNumber1(150);
+    isActive ? setNumber2(300) : setNumber2(350);
+    isActive ? setNumber3(700) : setNumber3(800);
   });
 
   return (
@@ -85,6 +92,8 @@ const Planes = () => {
           Planescard_id="Planescard_id_white"
           Planescard_message={basicText}
           Planescard_button="¡Comienza ahora!"
+          Planescard_number={30}
+          Planescard_target={number1}
         />
         <Planescard
           Planescard_title="Deluxe"
@@ -93,6 +102,8 @@ const Planes = () => {
           Planescard_id="Planescard_id_blue"
           Planescard_message={deluxeText}
           Planescard_button="¡Sube de nivel!"
+          Planescard_number={60}
+          Planescard_target={number2}
         />
         <Planescard
           Planescard_title="Máster"
@@ -101,6 +112,8 @@ const Planes = () => {
           Planescard_id="Planescard_id_green"
           Planescard_message={masterText}
           Planescard_button="¡Impulsa tu carrera!"
+          Planescard_number={90}
+          Planescard_target={number3}
         />
       </div>
       <p>
