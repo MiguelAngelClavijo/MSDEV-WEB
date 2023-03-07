@@ -1,5 +1,5 @@
 import React from "react";
-import {motion, useTransform, useScroll, useSpring } from "framer-motion";
+import { motion, useTransform, useScroll, useSpring } from "framer-motion";
 import "../styles/Landing.css";
 import keysicon from "../assets/icons/keysicon.svg";
 import reacticon from "../assets/icons/reacticon.svg";
@@ -11,16 +11,10 @@ import backarrow2 from "../assets/icons/backarrow2.svg";
 import numvector2 from "../assets/icons/numvector2.svg";
 
 const Landing = () => {
+  const { scrollY } = useScroll();
+  const scrollData = useTransform(scrollY, [0, 100], [0, 50], { clamp: false });
+  const scrollOutput = useSpring(scrollData, { mass: 0.7 });
 
-  const {scrollY} = useScroll()
-  const scrollData = useTransform(
-    scrollY,
-    [0, 100],
-    [0,50],
-    {clamp: false}
-  )
-const scrollOutput = useSpring(scrollData, {mass: 0.7})
-  
   const link = () => {
     window.open(
       "https://wa.me/573178225494?text=Hola! Quiero impulsar mi carrera al siguiente nivel y me gustaría saber cómo puedo hacerlo. ¿Podemos programar una reunión para discutir cómo podemos trabajar juntos?"
@@ -29,8 +23,14 @@ const scrollOutput = useSpring(scrollData, {mass: 0.7})
   return (
     <div className="Landing-Container">
       <div className="Landing-Container-Left">
-        <motion.img src={keysicon} style = {{translateY: scrollOutput}}></motion.img>
-        <motion.img src={reacticon} style = {{translateY: scrollOutput}}></motion.img>
+        <motion.img
+          src={keysicon}
+          style={{ translateY: scrollOutput }}
+        ></motion.img>
+        <motion.img
+          src={reacticon}
+          style={{ translateY: scrollOutput }}
+        ></motion.img>
         <h2>¡Tu sitio web es un reflejo de ti y de tu marca!</h2>
         <p>
           Permítenos ayudarte a causar una buena impresión con un diseño único
@@ -38,12 +38,21 @@ const scrollOutput = useSpring(scrollData, {mass: 0.7})
         </p>
         <div className="Landing-Container-Bottom">
           <p>¿Estas listo para llegar a un siguiente nivel?</p>
-          <button onClick={link}>Habla con nosotros ahora →</button>
+          <button onClick={link}>
+            Agenda tu cita{" "}
+            <span id="Landing-Container-Bottom-Free">gratis</span> ahora →
+          </button>
         </div>
       </div>
       <div className="Landing-Container-Right">
-        <motion.img src={jsicon} style = {{translateY: scrollOutput}}></motion.img>
-        <motion.img src={cssicon} style = {{translateY: scrollOutput}}></motion.img>
+        <motion.img
+          src={jsicon}
+          style={{ translateY: scrollOutput }}
+        ></motion.img>
+        <motion.img
+          src={cssicon}
+          style={{ translateY: scrollOutput }}
+        ></motion.img>
         <div className="Black-Card Landing-card">
           <div>
             {/* <img src={backarrow} /> */}
